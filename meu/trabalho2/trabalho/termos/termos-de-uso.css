@@ -1,0 +1,42 @@
+/* Fundo suave e centralização */
+body {
+    background-color: gray;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+.botao-voltar {
+    display: inline-block;
+    padding: 10px 28px;
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 24px;
+}
+.botao-voltar:hover {
+    background-color: #3949ab;
+}
+h2 {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+p {
+    text-align: justify; /* Justifica o texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin: 0 20px 20px 20px; /* Margem ao redor dos parágrafos */
+}
+a {
+    color: black; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+}
+h3 {
+    text-align: center; /* Centraliza */
+    color: #222; /* Cor escura */
+}
