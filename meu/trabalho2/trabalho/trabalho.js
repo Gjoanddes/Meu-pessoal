@@ -22,3 +22,20 @@ botoesCurtir.forEach(botao => {
         }
     });
 });
+const btnTema = document.getElementById('btn-tema');
+const body = document.body;
+const temaSalvo = localStorage.getItem('tema');
+if (temaSalvo === 'dark') {
+    body.classList.add('dark-mode');
+    btnTema.textContent = '☀️'; 
+}
+btnTema.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+        btnTema.textContent = '☀️'; 
+        localStorage.setItem('tema', 'dark');
+    } else {
+        btnTema.textContent = '🌙';
+        localStorage.setItem('tema', 'light');
+    }
+});
